@@ -29,13 +29,13 @@ const Box = styled(motion.li)`
         width:16rem;
         margin-right:6rem;
         height:33vh;
-       
 
   `};
   ${mediaQueries(40)`
         width:1rem;
         margin-right:4rem;
         height:33vh;
+        width:12rem;
         
         
 

@@ -2,13 +2,13 @@ import styled, { keyframes } from "styled-components";
 import { NavLink } from "react-router-dom";
 import { lazy, Suspense, useState } from "react";
 import { motion } from "framer-motion";
-
+import "../style.css"
 //Components
 import { YinYang } from "./AllSvgs";
 import Intro from "./Intro";
 import Loading from "../subComponents/Loading";
 import { mediaQueries } from "./Themes";
-// import Settings from "../subComponents/Settings";
+import Settings from "../subComponents/Settings";
 
 const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const SocialIcons = lazy(() => import("./../subComponents/SocialIcons"));
@@ -121,7 +121,7 @@ const WORK = styled(NavLink)`
   left: calc(1rem + 2vw);
   transform: translate(-50%, -50%) rotate(-90deg);
   z-index: 1;
-  text-decoration: none;
+  text-decoration: underline;
   @media only screen and (max-width: 50em) {
     text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
   }
@@ -204,7 +204,7 @@ const Main = () => {
         <DarkDiv click={click} />
         <Container>
           <LogoComponent theme={click ? "dark" : "light"} />
-          {/* <Settings/> */}
+          <Settings/>
           <PowerButton />
           {mq ? (
             <SocialIcons theme="light" />
@@ -352,7 +352,7 @@ const Main = () => {
               </motion.h2>
             </ABOUT>
 
-            <SKILLS to="/skills">
+            <SKILLS  to="/skills">
               <motion.h2
                 onClick={() => setpath("skills")}
                 initial={{

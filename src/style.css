@@ -1,3 +1,8 @@
+h2 {
+    text-decoration: 2px solid underline;
+    
+}
+
 .btn_cv {
     --border-radius: 15px;
     --border-width: 4px;
@@ -5,7 +10,7 @@
     position: relative;
     padding: 1em 2em;
     border: 0;
-    background-color: #212121;
+    background-color: #0a0a0a;
     font-family: "Roboto", Arial, "Segoe UI", sans-serif;
     font-size: 18px;
     font-weight: 500;

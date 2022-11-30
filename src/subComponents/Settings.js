@@ -35,12 +35,15 @@ const Settings = () => {
 
          <div className={modalvisible === 1 ? 'services__modal active-modal' : 'services__modal'}>
             <div className="services__modal-content">
-            
-               <i onClick={() => toggleTab(0)} className='bx bx-window-close'></i>
+            <i onClick={() => toggleTab(0)} className="fa-solid fa-square-xmark services__modal-close"></i>
+          
                {/* Settings */}
              <div className="conta">
              <h3 className="settings__title"> Settings</h3>
-            <button>hi</button>
+             <div className="btn-setting-container">
+             <button className='button__settings'>🇪🇸</button>
+             <button className='button__settings'>🇺🇸</button>
+            </div> 
             {/* <div className="btn-setting-container">
              <button className='button__settings' onClick={() => i18n.changeLanguage("es")}>🇪🇸</button>
              <button className='button__settings' onClick={() => i18n.changeLanguage("en")}>🇺🇸</button>

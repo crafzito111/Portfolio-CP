@@ -23,6 +23,8 @@ const MainContainer = styled(motion.div)`
   background-position: center;
 `;
 
+
+
 const Container = styled.div`
   background-color: ${(props) => `rgba(${props.theme.bodyRgba},0.8)`};
 
@@ -38,7 +40,7 @@ const Center = styled.div`
   justify-content: center;
   align-items: center;
   padding-top: 10rem;
-
+  z-index: 1500;
   ${mediaQueries(30)`
     padding-top: 7rem;
     
@@ -49,6 +51,7 @@ const Center = styled.div`
 const Grid = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(2, minmax(calc(10rem + 15vw), 1fr));
+  z-index: 1500;
 
   grid-gap: calc(1rem + 2vw);
 
@@ -59,6 +62,7 @@ const Grid = styled(motion.div)`
   
   `};
 `;
+
 
 const container = {
   hidden: { opacity: 0 },
@@ -102,7 +106,7 @@ const BlogPage = () => {
             </Grid>
           </Center>
 
-          <BigTitle text="STUDIES" top="5rem" left=".2rem" />
+          <BigTitle text="STUDIES" z-index="1" top="5rem" left=".2rem" />
         </Container>
       </MainContainer>
     </Suspense>

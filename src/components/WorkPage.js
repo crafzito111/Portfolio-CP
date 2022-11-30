@@ -10,7 +10,7 @@ import { DarkTheme, mediaQueries } from "./Themes";
 import Card from "../subComponents/Card";
 import Loading from "../subComponents/Loading";
 
-const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
+// const SocialIcons = lazy(() => import("../subComponents/SocialIcons"));
 const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const LogoComponent = lazy(() => import("../subComponents/LogoComponent"));
 const BigTitle = lazy(() => import("../subComponents/BigTitle"));
@@ -48,13 +48,14 @@ const Main = styled(motion.ul)`
 
   `};
 
-  ${mediaQueries(40)`
+  ${mediaQueries(30)`
         
         left:calc(2rem + 15vw);
+      
 
   `};
   ${mediaQueries(25)`
-        
+
         left:calc(1rem + 15vw);
 
   `};
@@ -132,7 +133,7 @@ const WorkPage = () => {
         >
           <LogoComponent theme="dark" />
           <PowerButton />
-          <SocialIcons theme="dark" />
+          {/* <SocialIcons theme="dark" /> */}
 
           <Main ref={ref} variants={container} initial="hidden" animate="show">
             {Work.map((d) => (

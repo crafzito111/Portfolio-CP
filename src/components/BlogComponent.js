@@ -15,7 +15,7 @@ const Box = styled(motion(NavLink))`
 
   display: flex;
   flex-direction: column;
-  z-index: 50000000;
+  z-index: 500;
 
   cursor: pointer;
   &:hover {
@@ -95,6 +95,7 @@ const Title = styled.h3`
 `;
 const HashTags = styled.div`
   padding: 0.5rem 0;
+  cursor: pointer;
   ${mediaQueries(25)`
     
     font-size:calc(0.5em + 1vw);

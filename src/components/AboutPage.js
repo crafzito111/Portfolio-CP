@@ -118,7 +118,7 @@ const AboutPage = () => {
           <br />
           I am a person who has learned to constantly reinvent myself to achieve the best performance. My profile is goal-oriented, productivity and problem solving with a spirit of continuous learning. I am passionate about web development and the implementation of applications that aim to meet the needs of society.
           
-         <a href={cv} download={true}>
+         <a href={cv} rel="noreferrer" target="_blank">
          <button className='btn_cv'>
 Download CV
         </button>
