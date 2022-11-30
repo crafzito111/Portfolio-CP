@@ -108,7 +108,7 @@ const BLOG = styled(NavLink)`
   right: calc(1rem + -0.75vw);
   transform: rotate(90deg) translate(-50%, -50%);
   z-index: 1;
-
+  
   text-decoration: none;
   @media only screen and (max-width: 50em) {
     text-shadow: ${(props) => (props.click ? "0 0 4px #000" : "none")};
