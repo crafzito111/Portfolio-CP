@@ -8,7 +8,7 @@ import { YinYang } from "./AllSvgs";
 import Intro from "./Intro";
 import Loading from "../subComponents/Loading";
 import { mediaQueries } from "./Themes";
-import Settings from "../subComponents/Settings";
+// import Settings from "../subComponents/Settings";
 
 const PowerButton = lazy(() => import("../subComponents/PowerButton"));
 const SocialIcons = lazy(() => import("./../subComponents/SocialIcons"));
@@ -204,7 +204,7 @@ const Main = () => {
         <DarkDiv click={click} />
         <Container>
           <LogoComponent theme={click ? "dark" : "light"} />
-          <Settings/>
+          {/* <Settings/> */}
           <PowerButton />
           {mq ? (
             <SocialIcons theme="light" />
