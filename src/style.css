@@ -70,3 +70,7 @@ h2 {
    .btn_cv:active {
     --border-width: 5px;
    }
+
+.img-card img{
+border: 1px solid red;
+   }
