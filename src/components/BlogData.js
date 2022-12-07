@@ -40,7 +40,7 @@ export const Blogs = [
         name:"Github para programadores",
         tags:["github"],
         date:"21 Sep, 2021",
-        imgSrc:"https://media-exp1.licdn.com/dms/image/D4E1FAQGTL6izZCYEeg/feedshare-document-cover-images_1280/0/1663731062920?e=1669842000&v=beta&t=t05-YX3F9mDZYR3AQwBvwqsGBM2sM2kOQ1oxd4jZGfs",
+        imgSrc:"https://media-exp1.licdn.com/dms/image/D4E1FAQGTL6izZCYEeg/feedshare-document-cover-images_1280/0/1663731062920?e=1671048000&v=beta&t=93F6mKYh8Gr8RIeOqbvDmtjKD41fwsMxwvTC6Cf09oU",
         link:"https://www.linkedin.com/learning/certificates/50f53dbf84283e6d85b25dbb7b38d056a4e5c4e0e2d146e48371e78064a84410"
     },
     {
